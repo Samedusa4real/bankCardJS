@@ -1,0 +1,201 @@
+body{
+    height: 100%;
+    background-color: #3f3f3f;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    background-color: purple;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    position: relative;
+}
+
+// BALANCE PART STARTS
+.card-balance {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: white;
+}
+  
+.card-balance p {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+// BALANCE PART ENDS
+
+// FRONT SIDE STARTS
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+  
+.card-front {
+    transform: rotateY(0deg);
+}
+  
+.card-back {
+    transform: rotateY(180deg);
+}
+  
+.card:hover .card-front {
+    transform: rotateY(-180deg);
+}
+  
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+  
+.card-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+  
+.card-logo img {
+    width: 70px;
+}
+  
+.card-number {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.504);
+}
+
+  
+.card-name {
+    position: absolute;
+    top: 190px;
+    left: 20px;
+    font-size: 18px;
+    color: white;
+}
+  
+.card-expiry {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.348);
+    text-align: right;
+}
+  
+.card-expiry h4 {
+    margin: 0;
+}
+  
+.card-expiry p {
+    margin: 0;
+}
+// FRONT SIDE ENDS
+
+// BACK SIDE STARTS
+.card-back {
+    background-color: #ccc;
+    transform: rotateY(180deg);
+}
+  
+.card-magnetic {
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+    border-radius: 5px;
+}
+  
+.card-cvv {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    color: red;
+    text-align: right;
+}
+  
+.card-cvv h4 {
+    margin: 0;
+    font-size: 16px;
+}
+  
+.card-cvv p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+// BACK SIDE ENDS
+
+
+.card-buttons {
+    position: relative;
+    top: 250px;
+    display: flex;
+}
+  
+.card-buttons button {
+    padding: 10px 20px;
+    border: 1px solid white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #3f3f3f;
+    color: #fff;
+}
+
+.card-buttons :nth-child(1){
+    border-bottom-left-radius: 10px;
+}
+  
+.card-buttons :nth-child(3){
+    border-bottom-right-radius: 10px;
+}
+// HISTORY OF PAYMENTS SECTION STARTS
+.card-history {
+    // position: relative;
+    margin-top: 60px;
+    width: 500px;
+    // height: 300px;
+    // height: 200px;
+    // top: 100px;
+    padding: 20px;
+    // box-sizing: border-box;
+    background-color: orange;
+    border-top: 1px solid black;
+}
+  
+.card-history h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+  
+.card-history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.card-history li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+// HISTORY OF PAYMENTS SECTION ENDS
