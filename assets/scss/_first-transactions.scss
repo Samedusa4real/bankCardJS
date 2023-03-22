@@ -1,0 +1,21 @@
+body{
+    height: 100%;
+    background-color: #3f3f3f;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    background-color: purple;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: relative;
+}
